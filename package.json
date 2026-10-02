@@ -1,0 +1,13 @@
+{
+  "name": "mochie-tg-relay",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Transparent reverse proxy for the Telegram Bot API, for clients behind the GFW.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

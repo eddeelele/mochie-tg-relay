@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: mochie-tg-relay
+    runtime: node
+    plan: free
+    region: singapore
+    branch: main
+    buildCommand: echo "no build"
+    startCommand: node server.js
+    healthCheckPath: /_health
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
